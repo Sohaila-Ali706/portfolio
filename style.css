@@ -231,6 +231,16 @@ nav span {
   }
 }
 @media (max-width: 650px) {
+  .reveal-left,
+  .reveal-right {
+    transform: translateY(24px);
+  }
+
+  .reveal-left.show,
+  .reveal-right.show {
+    transform: translateY(0);
+  }
+
   body {
     margin: 12px !important;
   }
@@ -278,6 +288,7 @@ nav span {
   .images {
     width: min(86vw, 430px);
     min-width: 0;
+    max-width: 100%;
   }
 
   .images .img1 img {
